@@ -1,4 +1,5 @@
-﻿using MascaradeApp.WebAPI.Models;
+﻿using MascaradeApp.WebAPI.Entities;
+using MascaradeApp.WebAPI.Models;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 

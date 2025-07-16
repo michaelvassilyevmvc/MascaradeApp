@@ -1,6 +1,6 @@
 ﻿using MascaradeApp.WebAPI.Enums;
 
-namespace MascaradeApp.WebAPI.Models;
+namespace MascaradeApp.WebAPI.Entities;
 
 public class Costume
 {

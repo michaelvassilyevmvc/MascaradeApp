@@ -1,4 +1,6 @@
-﻿namespace MascaradeApp.WebAPI.Models;
+﻿using MascaradeApp.WebAPI.Entities;
+
+namespace MascaradeApp.WebAPI.Entities;
 
 public class Rental
 {

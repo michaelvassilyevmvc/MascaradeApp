@@ -1,4 +1,4 @@
-﻿namespace MascaradeApp.WebAPI.Models;
+﻿namespace MascaradeApp.WebAPI.Entities;
 
 public class Customer
 {
