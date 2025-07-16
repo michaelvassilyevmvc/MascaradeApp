@@ -1,4 +1,4 @@
-﻿namespace MascaradeApp.WebAPI.Models;
+﻿namespace MascaradeApp.WebAPI.Enums;
 
 [Flags]
 public enum CostumeCategory
