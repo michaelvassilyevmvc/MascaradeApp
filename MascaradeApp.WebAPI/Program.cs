@@ -51,6 +51,7 @@ builder.Services.AddSwaggerGen(options =>
 });
 builder.Services.AddScoped<IAuthRepository, AuthRepository>();
 builder.Services.AddScoped<ICustomerRepository, CustomerRepository>();
+builder.Services.AddScoped<ICostumeRepository,CostumeRepository>();
 builder.Services.AddValidatorsFromAssembly(typeof(CustomerCreateDto).Assembly);
 builder.Services.AddAutoMapper(typeof(Program));
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
