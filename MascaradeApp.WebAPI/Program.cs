@@ -1,6 +1,8 @@
 using System.Text;
+using FluentValidation;
 using MascaradeApp.WebAPI;
 using MascaradeApp.WebAPI.Data;
+using MascaradeApp.WebAPI.DTO;
 using MascaradeApp.WebAPI.Endpoints;
 using MascaradeApp.WebAPI.Models;
 using MascaradeApp.WebAPI.Services;
@@ -48,6 +50,8 @@ builder.Services.AddSwaggerGen(options =>
     });
 });
 builder.Services.AddScoped<IAuthRepository, AuthRepository>();
+builder.Services.AddScoped<ICustomerRepository, CustomerRepository>();
+builder.Services.AddValidatorsFromAssembly(typeof(CustomerCreateDto).Assembly);
 builder.Services.AddAutoMapper(typeof(Program));
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
 {
@@ -100,6 +104,7 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 app.ConfigureAuthEndpoint();
+app.ConfigureCustomerEndpoint();
 
 app.UseHttpsRedirection();
 app.Run();
